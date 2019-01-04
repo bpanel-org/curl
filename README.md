@@ -5,7 +5,13 @@ This plugin runs entirely on the server and has no views.
 It adds a new API endpoint with the shape...
 
 ```
-/curl/:host/:path
+/curl/:host?path=<path>
+```
+
+Example usage from the `@Bpanel/price` plugin:
+
+```
+http://localhost:5000/curl/cex.io?path=api/ticker/BCH/USD
 ```
 
 ...and fetches JSON API data from the requested URL. This helps bypass CORS
