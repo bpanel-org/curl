@@ -3,7 +3,7 @@ const { curl } = require('./handlers');
 module.exports = [
   {
     method: 'GET',
-    path: '/curl/:host/:path',
+    path: '/curl/:host',
     handler: curl
   }
 ];
